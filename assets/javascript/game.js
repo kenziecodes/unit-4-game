@@ -1,28 +1,32 @@
+$(document).ready(function(){
+
 
 var score = 0;
 var wins = 0;
 var losses = 0;
 
-// defiine the random # for every crystal
+// define the random # for every crystal
 var computerNum = Math.floor(Math.random() * 101 + 19);
-var randNum1 = Math.floor(Math.random() * 11 + 1);
-var randNum2 = Math.floor(Math.random() * 11 + 1);
-var randNum3 = Math.floor(Math.random() * 11 + 1);
-var randNum4 = Math.floor(Math.random() * 11 + 1);
+$(".score").text(computerNum);
 
-console.log(randNum1);
-console.log(randNum3);
-console.log(randNum2);
-console.log(randNum4);
+var userScore = 0
 
+var imgButtons = $('.gemButton');
 
-
-var targetNumber = Math.floor(Math.random() * 80) + 20;
-console.log(targetNumber);
+for(var button of imgButtons){
+    $(button).attr('data-value',Math.floor(Math.random() * 11 + 1))
+}
 
 // reset game
-
 function resetGame() {
-    userNumber = 0;
-    targetNumber = Math.floor(Math.random() * 80) + 20;
+    userScore = 0;
+    computerNum = Math.floor(Math.random() * 101 + 19);
+}
+//listening for clicks
+$(".gemButton").on("click",function(){
+    console.log($(this).attr('data-value'))
+    userScore = userScore + +$(this).attr('data-value')
+    console.log(userScore)
+});
 
+});

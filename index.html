@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="assets/javascript/game.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Crystal Game</title>
 </head>
 
 <body>
-    <h1> Crystal Game</h1>
+    <h1> Crystal Game </h1>
     <p>Click the gems to get points | Match the number to win</p>
     <!-- four crystal buttons -->
     <div class="crystals">
 
-        <img id="blackGem" src="assets/images/black-gem.jpeg">
-        <img id="#blueGem" src= "assets/images/blue-gem.png">
-        <img id="purpleGem" src="assets/images/purple-gem.png">
-        <img id="redGem" src="assets/images/red-ruby.png">
+        <img id="blackGem" class="gemButton" data-value="1" src="assets/images/black-gem.jpeg">
+        <img id="blueGem" class="gemButton" data-value="2" src= "assets/images/blue-gem.png">
+        <img id="purpleGem" class="gemButton" data-value="3" src="assets/images/purple-gem.png">
+        <img id="redGem" class="gemButton" data-value="4" src="assets/images/red-ruby.png">
         
     </div>
-
+<div class="score"> </div>
     <!-- crystals are assiigned random values 1-12 -->
 
 
