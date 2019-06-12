@@ -1,6 +1,7 @@
 # unit-4-game
 ### Option One: CrystalsCollector Game (Recommended)
-
+/Users/mackenzieroberts/code/UACHA201904FSF2-FT/19-react/01-Activities/05-Stu_ConvertConstLetArrow/Unsolved/index.js
+an example
 ![Crystal Collector](Images/1-CrystalCollector.jpg)
 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).

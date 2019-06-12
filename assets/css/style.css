@@ -4,5 +4,6 @@
     flex-wrap: wrap;
 }
 .crystals > img {
+    height: 150px;
     width: 150px;
 }
